@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { IEvent } from './shared/index';
 
 @Component({
     selector: 'event-thumbnail',
@@ -24,14 +25,15 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     `,
     styles: [`
         .green { color: #003300 !important; }
-        .bold { font-weight: bold; }
+        .bold { font-weight: boldimport { IEvent } from './shared/event.model';
+; }
         .thumbnail { min-height: 210px; }
         .pad-left { margin-left : 10px; }
     `]
 })
 
 export class EventThumbnailComponent {
-    @Input() event: any; // taking any event input from list component
+    @Input() event: IEvent; // taking any event input from list component
 
     getStartTimeClass() {
         const isEarlyStart = this.event && this.event.time === '8:00 am';
