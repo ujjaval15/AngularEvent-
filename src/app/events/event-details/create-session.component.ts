@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { ISession, restrictedWords } from '../shared/index';
-import { EventEmitter } from 'protractor';
 
 @Component({
     selector: 'create-session',
