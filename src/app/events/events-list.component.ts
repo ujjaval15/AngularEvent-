@@ -49,3 +49,5 @@ export class EventsListComponent implements OnInit {
 // () --  use to bind in the html to component direction , typically use for responding to events -- one way binindg
 // [] -- use to bind in component to html direction, is typically used for displaying data from the component on the page
 // [()] - bannana in a box - 2 way data binding, often forms used for editing existing data so display exsiting data as you type
+
+// Directive -- We can attach new functionality to an existing DOM node.
