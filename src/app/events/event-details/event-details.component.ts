@@ -17,6 +17,9 @@ export class EventDetailsComponent implements OnInit {
     addMode: boolean
     eventService: EventService;
     route: ActivatedRoute;
+    filterBy: string = 'all';
+    sortBy: string = 'votes';
+
     constructor(@Inject(EventService) eventService: EventService, @Inject(ActivatedRoute) route: ActivatedRoute) {
         this.eventService = eventService;
         this.route = route;
