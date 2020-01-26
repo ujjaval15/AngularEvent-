@@ -44,3 +44,5 @@ function sortByNameAsc(s1: ISession, s2:ISession) {
 function sortByVotesDesc(s1: ISession, s2:ISession) {
     return s2.voters.length - s1.voters.length;
 }
+
+//did sorting and filter in component becasue of performace issue with angualr 1 filters 
